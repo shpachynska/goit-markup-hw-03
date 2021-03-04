@@ -81,16 +81,20 @@ body {
 .logo,
 .logo-light {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--black-logo-color);
 }
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .logo-light {
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
 }
 .logo-part {
   color: var(--accent-color);
@@ -376,6 +380,8 @@ body {
 /* ===================FOOTER======================= */
 .footer {
   background-color: var(--dark-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .address {
