@@ -233,11 +233,15 @@ body {
 }
 .feature-list {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -30px;
+  margin-top: -30px;
 }
 
 .feature-list-item {
   margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 4 - 30px);
   max-width: 270px;
 }
 
@@ -250,13 +254,16 @@ body {
 }
 .service-images {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -30px;
+  margin-top: -30px;
 }
-/* .service-image {
-  display: block;
-} */
+
 .service-item {
   margin-left: 30px;
+  margin-top: 30px;
+  width: 370px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 .service-image {
   display: block;
@@ -287,10 +294,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
+  margin-top: -30px;
 }
 
 .team-item {
   margin-left: 30px;
+  margin-top: 30px;
   flex-basis: calc(100% / 4 - 30px);
   background-color: var(--secondary-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -339,7 +348,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 34px;
+  margin-bottom: 50px;
 }
 .descr-div {
   border: 1px solid #eeeeee;
@@ -354,10 +363,10 @@ body {
 }
 .list-item {
   width: 370px;
-  height: 404px;
   background: #ffffff;
   margin-left: 30px;
   margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .work-title {
@@ -395,5 +404,11 @@ body {
 }
 .footer-tel {
   color: var(--contacts-text-color);
+}
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--accent-color);
 }
 /* ===================END FOOTER==================== */
